@@ -320,9 +320,9 @@ void CTFWeaponBaseMelee::Swing( CTFPlayer *pPlayer )
 #endif
 
 	m_flSmackTime = GetSmackTime( m_iWeaponMode );
-	if(m_flSmackTime >= m_flNextPrimaryAttack)
+	if( m_flSmackTime>=m_flNextPrimaryAttack )
 	{
-		m_flSmackTime = m_flNextPrimaryAttack - 0.01;
+		m_flSmackTime = m_flNextPrimaryAttack - 0.01f;
 	}
 }
 
