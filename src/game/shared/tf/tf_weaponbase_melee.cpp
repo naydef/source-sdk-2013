@@ -308,7 +308,7 @@ void CTFWeaponBaseMelee::Swing( CTFPlayer *pPlayer )
 	m_potentialVictimVector.RemoveAll();
 	const float looseSwingRange = 1.2f * GetSwingRange();
 
-	for( int i=0; i<enemyVector.Count(); ++i )
+	for ( int i=0; i<enemyVector.Count(); ++i )
 	{
 		Vector toVictim = enemyVector[i]->WorldSpaceCenter() - pPlayer->Weapon_ShootPosition();
 
@@ -320,7 +320,7 @@ void CTFWeaponBaseMelee::Swing( CTFPlayer *pPlayer )
 #endif
 
 	m_flSmackTime = GetSmackTime( m_iWeaponMode );
-	if( m_flSmackTime>=m_flNextPrimaryAttack )
+	if ( m_flSmackTime>=m_flNextPrimaryAttack )
 	{
 		m_flSmackTime = m_flNextPrimaryAttack - 0.01f;
 	}
